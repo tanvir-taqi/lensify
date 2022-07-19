@@ -21,7 +21,7 @@ section{
 .color-text{
     color: #0A0826;
 }
-/* =============================== herader style ====================== */
+/* =============================== header style ====================== */
 
 
 header nav {
@@ -73,7 +73,12 @@ header nav {
     font-size: 20px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.87);
+    transition: color 0.6s ease-in-out;
 
+}
+.nav-menu ul li a:hover {
+    color: #0A0826;
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 .icons{
     display: flex;
@@ -86,12 +91,39 @@ header nav {
 }
 
 @media screen and (max-width:576px){
-  
+  header{
+    min-width: 300px;
+    
+  }
     header nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        min-width: 100%;
+        
+    }
+    .nav-menu ul{
+        display: none;
+    }
+    .res-btn-icon{
+        display: block;
+    }
+    .fa-magnifying-glass{
+        display: none;
+    }
+    .fa-cart-shopping{
+        display: block;
+    }
+}
+@media screen and (min-width:577px) and (max-width:991px){
+  header{
+    min-width: 300px;
+    
+  }
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
     }
     .nav-menu ul{
         display: none;
@@ -164,10 +196,10 @@ header nav {
     .banner{
         display: flex;
         flex-direction: column-reverse;
-        width: 100%;
+        min-width: 300px;
     }
     .banner-img{
-        width: 70%;
+        min-width: 300px;
         padding: 30px;
         
         display: flex;
@@ -179,7 +211,7 @@ header nav {
         width: 100%;
     }
     .banner-content{
-        width: 70%;
+        min-width: 300px;
        
         margin: auto;
         
@@ -199,10 +231,10 @@ header nav {
     .banner{
         display: flex;
         flex-direction: column-reverse;
-        width: 100%;
+        min-width: 950px;
     }
     .banner-img{
-        width: 70%;
+        width: 100%;
         padding: 30px;
       
         display: flex;
@@ -214,7 +246,7 @@ header nav {
         width: 100%;
     }
     .banner-content{
-        width: 70%;
+        width: 100%;
        
         margin: auto;
         
@@ -254,7 +286,7 @@ header nav {
 }
 @media screen and (max-width:576px) {
     .company-list-section{
-        width: 100%;
+        min-width: 300px;
         
        
     }
@@ -271,7 +303,7 @@ header nav {
 }
 @media screen and (min-width:577px) and (max-width:991px) {
     .company-list-section{
-        width: 100%;
+        min-width: 950px;
         
         
     }
@@ -367,7 +399,7 @@ header nav {
 
 @media screen and (max-width:576px){
     .collection-section{
-        width: 100%;
+        min-width: 300px;
         margin: 0;
     }
     .collection-title h2{
@@ -380,6 +412,10 @@ header nav {
     }
 }
 @media screen and (min-width:577px) and (max-width:991px){
+    .collection-section{
+        min-width: 950px;
+        margin: 0;
+    }
     .collection-card-box{
         grid-template-columns: repeat(2 , 1fr);
     }
@@ -436,7 +472,7 @@ header nav {
 }
 @media screen and (max-width:576px){
     .featured-product-section{
-        width: 100%;
+        min-width: 300px;
         flex-direction: column;
         
     }
@@ -456,7 +492,7 @@ header nav {
 /* =========================footer style ============================= */
 
 footer{
-    width: 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
