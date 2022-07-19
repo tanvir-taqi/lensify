@@ -1,5 +1,12 @@
 
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Yesteryear&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
 
 main{
     display: flex;
@@ -7,7 +14,98 @@ main{
     align-items: center;
     justify-content: center;
 }
+section{
+    width: 100%;
+    margin-bottom:100px;
+}
+.color-text{
+    color: #0A0826;
+}
+/* =============================== herader style ====================== */
 
+
+header nav {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+.res-btn-icon{
+    display: none;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: 600;
+    color: #0A0826;
+    font-family: 'Yesteryear', cursive;
+    text-shadow: 2px 2px 2px #E02C6D;
+    
+
+}
+.logo-color{
+    color: #E02C6D;
+    text-shadow: 2px 2px 2px #0A0826;
+    
+}
+
+.nav-menu{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-menu ul {
+    display: flex;
+    
+    
+
+}
+.nav-menu ul li {
+    margin-right: 50px;
+    list-style: none;
+}
+.nav-menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.87);
+
+}
+.icons{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+}
+
+.icons i{
+    margin-right: 15px;
+}
+
+@media screen and (max-width:576px){
+  
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 100%;
+    }
+    .nav-menu ul{
+        display: none;
+    }
+    .res-btn-icon{
+        display: block;
+    }
+    .fa-magnifying-glass{
+        display: none;
+    }
+    .fa-cart-shopping{
+        display: block;
+    }
+}
 
 /* ======================= banner style ==================== */
 
@@ -61,3 +159,316 @@ main{
     width: 100%;
     padding: 60px;
 }
+
+@media screen and (max-width:576px) {
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .banner-img{
+        width: 70%;
+        padding: 30px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .banner-img img {
+        width: 100%;
+    }
+    .banner-content{
+        width: 70%;
+       
+        margin: auto;
+        
+    }
+    .banner-title{
+        font-size: 28px;
+    }
+    .banner-text{
+        font-size: 14px;
+    }
+    .banner-btn{
+        font-size: 14px;
+        width: 194px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:991px) {
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .banner-img{
+        width: 70%;
+        padding: 30px;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .banner-img img {
+        width: 100%;
+    }
+    .banner-content{
+        width: 70%;
+       
+        margin: auto;
+        
+    }
+    .banner-title{
+        font-size: 28px;
+    }
+    .banner-text{
+        font-size: 14px;
+    }
+    .banner-btn{
+        font-size: 14px;
+        width: 194px;
+    }
+}
+
+/* ================================ company list section ===================== */
+
+.company-list-section{
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    border-top:1px solid rgb(228, 226, 226) ;
+    border-bottom:1px solid rgb(228, 226, 226) ;
+}
+.company-list{
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+    padding: 30px;
+}
+.company-list-item{
+    width: 100px;
+    margin-right: 30px;
+}
+@media screen and (max-width:576px) {
+    .company-list-section{
+        width: 100%;
+        
+       
+    }
+    .company-list{
+        
+        flex-wrap: wrap;
+        
+    }
+    .company-list-item{
+        width: 50px;
+        margin: 0;
+        padding: 5px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:991px) {
+    .company-list-section{
+        width: 100%;
+        
+        
+    }
+    .company-list{
+        
+        flex-wrap: wrap;
+        
+    }
+    .company-list-item{
+        width: 80px;
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+/* =================================collection section style =====================================  */
+
+.collection-section{
+    background: #AAAAAA;
+    width: 80%;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding-bottom:30px ;
+}
+.collection-title h2{
+    font-size: 28px;
+    font-weight: 600;
+    margin: 30px auto;
+}
+
+
+.collection-card-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    padding: 20px;
+}
+.collection-card{
+    background:#ffffff;
+    padding: 10px ;
+    border-radius: 5px;
+    /* width: 329px; */
+    transition: all 0.4s ease-in-out;
+}
+
+.collection-card:hover{
+    box-shadow: -19px 17px 21px -11px rgba(16,16,16,0.75);
+    -webkit-box-shadow: -19px 17px 21px -11px rgba(16,16,16,0.75);
+    -moz-box-shadow: -19px 17px 21px -11px rgba(16,16,16,0.75);
+}
+.collection-card img{
+    width: 100%;
+}
+.collection-card h2{
+    font-size: 28px;
+    font-weight: 500;
+}
+.price{
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+}
+.rating{
+    display: flex;
+    align-items: center;
+}
+.fa-star.filled , .fa-star-half-stroke.empty {
+    color: #FB8200;
+    font-size: 11px;
+    
+}
+
+.rating-num{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.collection-info-box{
+   display: flex;
+   flex-direction: column;
+   width: 48%;
+   margin-bottom: 10px;
+}
+.collection-info{
+    color: #787885;
+    font-size: 14px;
+    margin-bottom: 0;
+    
+}
+
+@media screen and (max-width:576px){
+    .collection-section{
+        width: 100%;
+        margin: 0;
+    }
+    .collection-title h2{
+        font-size: 24px;
+    }
+    .collection-card-box{
+        grid-template-columns: repeat(1 , 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 0;
+    }
+}
+@media screen and (min-width:577px) and (max-width:991px){
+    .collection-card-box{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+
+/* ======================== fetured product style ========================  */
+.featured-product-section{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fetured-img{
+    width: 35%;
+    padding: 30px;
+}
+.fetured-content{
+    width: 65%;
+    padding:0 40px;
+}
+.featured-title{
+    font-size: 38px;
+    font-weight: 700;
+    color: #0A0826;
+    margin-top: 0;
+}
+.featured-text{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.featured-btn{
+    text-decoration: none;
+    background: #E02C6D;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 8px 13px;
+    
+    width: 196px;
+    font-weight: 600;
+    border: 2px solid #E02C6D;
+    transition: all 0.5s ease-in-out;
+}
+
+.featured-btn:hover{
+    color: #E02C6D;
+    background: rgb(255, 255, 255);
+}
+@media screen and (max-width:576px){
+    .featured-product-section{
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    .fetured-img{
+        width: 100%;
+        
+    }
+    .fetured-img img {
+        width: 100%;
+    }
+    .fetured-content{
+        width: 100%;
+        padding-right: 20px;
+       
+    }
+}
+/* =========================footer style ============================= */
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A0826;
+    color: #ffffff;
+    padding: 40px 0;
+}
+.social i{
+    margin-right: 10px;
+    
+}
+
+
+
